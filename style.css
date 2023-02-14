@@ -1,0 +1,107 @@
+body{
+    background: #FFFFFF;
+    margin: 0;
+}
+.Titulo{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    
+}
+.logo{
+    display: flex;
+    margin-top: 90px;
+    margin: 100px 0 0 80px;
+}
+.seccion1{
+    display: flex;
+    
+}
+.seccion1-subseccion1{
+    margin: 20% 25px 100px 25px;
+}
+.seccion1-subsecccion1_texto1{
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+.seccion1-subseccion_texto2{
+    font-size: 1em;
+    color: #C6C0C0;
+    margin: 0 0 10px 0;
+}
+.registro{
+    display: flex;
+}
+.campo{
+    width: 70%;
+    margin: 0 10px 0 0;
+    border-color: #9A24C1;
+    border-width: 1px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px 2px;
+    text-indent: 10px;
+    color: #9A24C1;
+}
+.boton{
+    width: 25%;
+    background-color: #9A24C1;
+    color:#FFFFFF;
+    font-weight: bold;
+    border-color: #9A24C1;
+    border-radius: 7%;
+}
+.testimonio{
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.perfil{
+    width: 10%;
+    height: 20%;
+}
+.seccion1-subseccion2-imagen1{
+    width: 600px;
+    height: 700px;
+}
+.seccion2{
+    display: flex;
+}
+.seccion2-subseccion1{
+    margin: 10% 10% 5% 5%;
+}
+.seccsion2-imagen1{
+    width: 500px;
+    height: 600px;
+}
+.seccion2-subccion2{
+    margin: 12% 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+}
+.seccion2-texto1{
+    font-size: 5em;
+}
+.seccion2-texto2{
+    font-size: 2em;
+    color: #C6C0C0;    
+}
+
+.seccion3{
+    width: 100%;
+    height: 200px;
+    background-color: #9A24C1;
+    color: #FFFFFF;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.seccion3-texto1{
+    font-size: 3em;
+}
+.seccion3-texto2{
+    font-size: 2em;
+}
