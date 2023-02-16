@@ -1,6 +1,13 @@
 body{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 110px;
+}
+
+body{
     background: #FFFFFF;
-    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 .Titulo{
     display: flex;
@@ -18,17 +25,22 @@ body{
     
 }
 .seccion1-subseccion1{
-    margin: 20% 25px 100px 25px;
+    margin: 50px 25px 100px 25px;
+}
+.seccion1-subsecccion1_texto1::after{
+    content: '\002E';
+    color: #8828ad;
 }
 .seccion1-subsecccion1_texto1{
     display: block;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
     color: #000000;
     margin: 0 0 10px 0;
+    text-transform: capitalize;
 }
 .seccion1-subseccion_texto2{
-    font-size: 1em;
+    font-size: 1.2em;
     color: #C6C0C0;
     margin: 0 0 10px 0;
 }
@@ -38,7 +50,7 @@ body{
 .campo{
     width: 70%;
     margin: 0 10px 0 0;
-    border-color: #9A24C1;
+    border-color: hsla(291, 46%, 59%, 0.658);
     border-width: 1px;
     font-weight: bold;
     font-style: italic;
@@ -48,17 +60,16 @@ body{
 }
 .boton{
     width: 25%;
-    background-color: #9A24C1;
+    background-color: hsla(291, 46%, 59%, 0.658);
     color:#FFFFFF;
     font-weight: bold;
-    border-color: #9A24C1;
+    border-color: hsla(291, 37%, 59%, 0.664);
     border-radius: 7%;
 }
 .testimonio{
     display: flex;
     margin-top: 10px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .perfil{
     width: 10%;
@@ -74,30 +85,35 @@ body{
 .seccion2-subseccion1{
     margin: 10% 10% 5% 5%;
 }
-.seccsion2-imagen1{
-    width: 500px;
-    height: 600px;
+.seccion2-imagen1{
+    width:100%;
+    max-width:1200px;
 }
 .seccion2-subccion2{
     margin: 12% 0 0 0;
     flex-direction: column;
     justify-content: center;
 }
+.seccion2-texto1::after{
+    content: '\002E';
+    color: hsla(291, 46%, 59%, 0.658);
+}
 .seccion2-texto1{
-    font-size: 5em;
+    font-size: 4em;
+    font-family: 'Noto Sans', sans-serif;
 }
 .seccion2-texto2{
-    font-size: 2em;
+    font-size: 1em;
     color: #C6C0C0;    
 }
 
 .seccion3{
     width: 100%;
     height: 200px;
-    background-color: #9A24C1;
+    background-color: hsla(291, 46%, 59%, 0.658);
     color: #FFFFFF;
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
 }
 .seccion3-texto1{
     font-size: 3em;
