@@ -8,24 +8,32 @@ body{
 body{
     background: #FFFFFF;
     font-family: 'Noto Sans', sans-serif;
+    margin: 0 0 1rem 0;
 }
-.Titulo{
-    display: flex;
-    width: 100%;
-    height: 30%;
-    
+img{
+    max-width: 100%;
 }
-.logo{
-    display: flex;
-    margin-top: 90px;
-    margin: 100px 0 0 80px;
+
+
+@media (min-width: 768px){
+    .titulo {
+        margin-left: 1rem;
+    }
 }
+
 .seccion1{
     display: flex;
-    
+    flex-direction: column;
 }
+@media (min-width: 768px){
+    .seccion1{
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+}
+
 .seccion1-subseccion1{
-    margin: 50px 25px 100px 25px;
+    margin: 50px 25px 0px 25px;
 }
 .seccion1-subsecccion1_texto1::after{
     content: '\002E';
@@ -46,6 +54,7 @@ body{
 }
 .registro{
     display: flex;
+    justify-content: center;
 }
 .campo{
     width: 70%;
@@ -76,21 +85,32 @@ body{
     height: 20%;
 }
 .seccion1-subseccion2-imagen1{
-    width: 600px;
-    height: 700px;
+    width:100%;
+    max-width:1200px;
 }
 .seccion2{
     display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px){
+    .seccion2{
+        flex-direction: row;
+    }
 }
 .seccion2-subseccion1{
-    margin: 10% 10% 5% 5%;
+    margin: 0%;
+}
+@media (min-width: 768px){
+    .seccion2-subseccion1{
+        margin-right: 5%;
+    }
 }
 .seccion2-imagen1{
     width:100%;
     max-width:1200px;
 }
 .seccion2-subccion2{
-    margin: 12% 0 0 0;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
 }
@@ -109,15 +129,25 @@ body{
 
 .seccion3{
     width: 100%;
-    height: 200px;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: hsla(291, 46%, 59%, 0.658);
     color: #FFFFFF;
     text-align: center;
-    border-radius: 10px;
+    padding-bottom: 5rem;
+    background-size: cover;
 }
 .seccion3-texto1{
-    font-size: 3em;
+    font-size: 3rem;
+    margin: 0%;
 }
 .seccion3-texto2{
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.centrar {
+    margin: auto;
+    max-width: 60%;
 }
