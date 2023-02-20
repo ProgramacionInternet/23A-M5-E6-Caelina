@@ -14,7 +14,9 @@ img{
     max-width: 100%;
 }
 
-
+.titulo{
+    margin-top: 1rem;
+}
 @media (min-width: 768px){
     .titulo {
         margin-left: 1rem;
@@ -24,6 +26,7 @@ img{
 .seccion1{
     display: flex;
     flex-direction: column;
+    margin: 50px 25px 0px 25px;
 }
 @media (min-width: 768px){
     .seccion1{
@@ -32,9 +35,6 @@ img{
     }
 }
 
-.seccion1-subseccion1{
-    margin: 50px 25px 0px 25px;
-}
 .seccion1-subsecccion1_texto1::after{
     content: '\002E';
     color: #8828ad;
@@ -75,6 +75,10 @@ img{
     border-color: hsla(291, 37%, 59%, 0.664);
     border-radius: 7%;
 }
+.boton:hover{
+    cursor:pointer;
+}
+
 .testimonio{
     display: flex;
     margin-top: 10px;
@@ -91,6 +95,7 @@ img{
 .seccion2{
     display: flex;
     flex-direction: column-reverse;
+    margin: 50px 25px 0px 25px;
 }
 @media (min-width: 768px){
     .seccion2{
@@ -137,6 +142,7 @@ img{
     text-align: center;
     padding-bottom: 5rem;
     background-size: cover;
+    
 }
 .seccion3-texto1{
     font-size: 3rem;
@@ -147,7 +153,9 @@ img{
     margin-bottom: 3rem;
 }
 
-.centrar {
-    margin: auto;
-    max-width: 50%;
+@media (min-width: 768px){
+    .centrar{
+        margin: auto;
+        max-width: 50%;
+    }
 }
