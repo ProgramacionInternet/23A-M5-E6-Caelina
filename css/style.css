@@ -1,15 +1,9 @@
 body{
-    margin-top: 0px;
-    margin-bottom: 100px;
-    margin-right: 50px;
-    margin-left: 110px;
-}
-
-body{
     background: #FFFFFF;
     font-family: 'Noto Sans', sans-serif;
     margin: 0 0 1rem 0;
 }
+  
 img{
     max-width: 100%;
 }
@@ -157,5 +151,152 @@ img{
     .centrar{
         margin: auto;
         max-width: 50%;
+    }
+}
+
+/* CARRUSEL */
+.slider{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.slides{
+    width: 500%;
+    height: 250px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 250px;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manula-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.nav-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    margin-top: 210px;
+}
+
+.nav-auto div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: white;
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: white;
+}
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: white;
+}
+#radio4:checked ~ .nav-auto .auto-btn4 {
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .slider {
+      width: 90%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .slides {
+      width: 500%;
+      height: 500px;
+      display: flex;
+    }
+  
+    .slide {
+      width: 20%;
+    }
+  
+    .slide img {
+      width: 100%;
+      height: 500px;
+    }
+  
+    .nav-manual {
+      width: 90%;
+      max-width: 100%;
+      margin-top: -40px;
+    }
+  
+    .manual-btn {
+      display: inline-block;
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  
+    .nav-auto {
+      width: 90%;
+      max-width: 100%;
+      margin-top: 460px;
+    }
+  
+    .nav-auto div {
+      display: inline-block;
+      margin-right: 40px
     }
 }
