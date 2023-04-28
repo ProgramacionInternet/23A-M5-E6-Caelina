@@ -1,4 +1,22 @@
 {
+  "name": "23a-m5-e6-caelina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgramacionInternet/23A-M5-E6-Caelina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProgramacionInternet/23A-M5-E6-Caelina/issues"
+  },
+  "homepage": "https://github.com/ProgramacionInternet/23A-M5-E6-Caelina#readme",
   "dependencies": {
     "express": "^4.18.2",
     "morgan": "^1.10.0"
