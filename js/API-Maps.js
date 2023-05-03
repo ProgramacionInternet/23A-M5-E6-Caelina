@@ -1,37 +1,3 @@
-//////////// API local //////////////////////////
-
-// Verificar si el navegador soporta la geolocalización
-if ("geolocation" in navigator) {
-  // Obtener la ubicación del usuario
-  navigator.geolocation.getCurrentPosition(
-    function(position) {
-      // Obtener las coordenadas de la ubicación
-      var latitud = position.coords.latitude;
-      var longitud = position.coords.longitude;
-
-      // Hacer algo con las coordenadas de la ubicación
-      // console.log("Latitud: " + latitud);
-      // console.log("Longitud: " + longitud);
-
-      iniciarMap(latitud, longitud);
-
-    },
-    function(error) {
-      // Manejar errores en la obtención de la ubicación
-      console.error("Error en la obtención de la ubicación: " + error.message);
-    },
-    {
-      enableHighAccuracy: true, // Habilitar alta precisión
-      timeout: 5000, // Tiempo máximo de espera en milisegundos
-      maximumAge: 0, // No utilizar caché de ubicaciones anteriores
-    }
-  );
-} else {
-   // Manejar el caso en que la geolocalización no esté disponible
-  console.error("La geolocalización no está disponible en este navegador.");
-}
-
-
 ///////////  API de Tercero ////////////////////////////////
 
 function iniciarMap(latitud, longitud){
@@ -44,9 +10,11 @@ function iniciarMap(latitud, longitud){
 
   // Array de ubicaciones con sus coordenadas
   var ubicaciones = [
+    // Ubicacion del usuario
     {
       coordenadas: {lat: latitud, lng: longitud},
     },
+    // Ubicacion de las universidades
     {
       coordenadas: {lat: 20.654861, lng: -103.32545},
       icono: '../Imagenes/Logo-icono.png'
@@ -85,6 +53,40 @@ function iniciarMap(latitud, longitud){
           }
       });
   });
+}
+
+
+//////////// API local //////////////////////////
+
+// Verificar si el navegador soporta la geolocalización
+if ("geolocation" in navigator) {
+  // Obtener la ubicación del usuario
+  navigator.geolocation.getCurrentPosition(
+    function(position) {
+      // Obtener las coordenadas de la ubicación
+      var latitud = position.coords.latitude;
+      var longitud = position.coords.longitude;
+
+      // Imprimir valores en consola
+      // console.log("Latitud: " + latitud);
+      // console.log("Longitud: " + longitud);
+
+      iniciarMap(latitud, longitud);
+
+    },
+    function(error) {
+      // Manejar errores en la obtención de la ubicación
+      console.error("Error en la obtención de la ubicación: " + error.message);
+    },
+    {
+      enableHighAccuracy: true, // Habilitar alta precisión
+      timeout: 5000, // Tiempo máximo de espera en milisegundos
+      maximumAge: 0, // No utilizar caché de ubicaciones anteriores
+    }
+  );
+} else {
+   // Manejar el caso en que la geolocalización no esté disponible
+  console.error("La geolocalización no está disponible en este navegador.");
 }
 
 
